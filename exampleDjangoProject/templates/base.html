@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title of your Web App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="custom-header">
+
+        <h1 class="text-white" style="display: inline; margin-left: 22px;">Title of your Web App</h1>
+
+        <div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="wrapper">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="custom-footer bg-dark text-white text-center py-3" style="width: 100%;">
+        <p>&copy; {{ year|date:"Y"}} Copyright 2024 Your Name</p>
+        <a class="text-white" href="/privacy_policy">Privacy Policy</a>
+        <a class="text-white" href="/impressum">Impressum</a>
+        <a class="text-white" href="/admin">Admin</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

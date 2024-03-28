@@ -1,0 +1,9 @@
+Django==4.2.3
+requests
+black
+pylint
+pytest
+gunicorn
+psycopg2
+SQLAlchemy
+icecream

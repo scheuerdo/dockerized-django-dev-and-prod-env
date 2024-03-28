@@ -1,0 +1,47 @@
+.custom-header {
+    background-color: #192757;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.custom-header .navbar {
+    background-color: transparent;
+}
+
+.custom-header .navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.custom-header .navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.wrapper {
+    min-height: 100vh;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.custom-footer {
+    width: 100%;
+}
+
+.dark-blue-button {
+    background-color: #192757;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dark-blue-button:hover {
+    background-color: #00004a;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="display-4 text-center">Fully containerized Django Web App</h1>
+    <p class="lead text-center">This Web App only has a simple CRUD functionality! It's purpose is to serve as a Django
+        Web App Template for further development.</p>
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Edit Item</h2>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="dark-blue-button">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
